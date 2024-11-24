@@ -20,7 +20,6 @@ export const CallAction = () => {
             backgroundImage: `url(${starsBg.src})`,
           }}
         >
-          {/* Overlay */}
           <div
             className="absolute inset-0 bg-[rgb(74,32,138)] bg-blend-overlay [mask-image:radial-gradient(50%_50%_at_50%_35%,black,transparent)]"
             style={{
@@ -28,7 +27,6 @@ export const CallAction = () => {
             }}
           ></div>
 
-          {/* Content */}
           <div className="relative">
             <h2 className="text-5xl md:text-6xl max-w-sm mx-auto tracking-tighter text-center font-medium">
               AI SEO for everyone.

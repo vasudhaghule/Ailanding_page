@@ -8,10 +8,7 @@ export const Header = () => {
     <header className="py-4 border-b border-white/15 md:border-none sticky top-0 z-10 bg-black/30 backdrop-blur-md">
       <div className="container">
         <div className="flex justify-between items-center md:border border-white/15 md:p-2.5 rounded-xl max-w-2xl mx-auto relative">
-          {/* Backdrop for Desktop */}
           <div className="absolute inset-0 backdrop-blur-md -z-10 hidden md:block rounded-xl"></div>
-
-          {/* Logo */}
           <a
             href="#"
             className="border h-10 w-10 rounded-lg inline-flex justify-center items-center border-white/15"
@@ -20,7 +17,6 @@ export const Header = () => {
             <LogoIcon className="h-8 w-8" alt="Logo" />
           </a>
 
-          {/* Navigation Links */}
           <div className="hidden md:block">
             <nav className="flex gap-8 text-sm">
               <a
@@ -49,8 +45,6 @@ export const Header = () => {
               </a>
             </nav>
           </div>
-
-          {/* Join Waitlist Button & Menu Icon */}
           <div className="flex gap-8 items-center">
             <Button>Join Waitlist</Button>
             <button className="md:hidden" aria-label="Open menu">

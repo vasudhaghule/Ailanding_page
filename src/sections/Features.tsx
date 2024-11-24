@@ -43,7 +43,6 @@ const FeatureTab = ({ icon, title, isNew }: { icon: string; title: string; isNew
       ease: "linear",
     });
 
-    // Cleanup animations on unmount
     return () => {
       controlsX.stop();
       controlsY.stop();
@@ -61,7 +60,6 @@ const FeatureTab = ({ icon, title, isNew }: { icon: string; title: string; isNew
       onMouseEnter={handleTabHover}
       className="relative border border-white/15 flex p-2.5 rounded-xl gap-2.5 items-center lg:flex-1 overflow-hidden"
     >
-      {/* Animated Border */}
       <motion.div
         style={{
           WebkitMaskImage: maskImage,
@@ -69,13 +67,10 @@ const FeatureTab = ({ icon, title, isNew }: { icon: string; title: string; isNew
         }}
         className="absolute inset-0 border border-[#A369FF] rounded-xl pointer-events-none"
       />
-      {/* Icon */}
       <div className="h-12 w-12 border border-white/15 flex items-center justify-center rounded-xl">
         <DotLottiePlayer ref={dotlottieRef} src={icon} className="h-5 w-5" autoplay loop />
       </div>
-      {/* Title */}
       <div className="font-medium">{title}</div>
-      {/* New Tag */}
       {isNew && (
         <div className="text-xs rounded-full px-2 py-0.5 bg-[#8c44ff] text-black font-semibold">
           New
